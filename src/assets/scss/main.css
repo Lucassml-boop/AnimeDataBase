@@ -35,22 +35,37 @@ header h1 strong {
   color: #313131;
   font-size: 24px;
   margin-bottom: 16px;
+  justify-content: center;
+  text-align: center;
 }
 .content-wrap aside nav a {
   display: block;
   padding: 8px 16px;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
   color: #888;
   font-size: 16px;
   margin-bottom: 16px;
-  background-color: #EEE;
   border-radius: 999px;
   text-decoration: none;
   transition: 0.4s;
 }
-.content-wrap aside nav a:hover {
-  background-color: #313131;
-  color: #AAA;
+.content-wrap aside nav a .image-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.content-wrap aside nav a .image-top img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  color: #888;
+}
+.content-wrap aside nav a .anime-card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
 }
 .content-wrap main {
   flex: 1 1 0%;
@@ -110,16 +125,12 @@ header h1 strong {
 }
 .content-wrap main .anime-list .anime-card figure img {
   display: block;
-  width: 100%;
-  height: 350px;
+  width: 23.5rem;
+  height: 35rem;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
   border-radius: 16px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
-  aspect-ratio: 2/3;
-  background-color: #EEE;
   transition: 0.4s;
 }
 .content-wrap main .anime-list .anime-card h3 {
