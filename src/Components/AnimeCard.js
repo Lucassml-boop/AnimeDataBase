@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AnimeCard({anime, isSidebar}){
+function AnimeCard({anime}){
     return(
         <article className="anime-card">
             <a href={anime.url} target="_blank" rel="noreferrer">
