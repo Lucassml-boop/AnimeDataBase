@@ -29,12 +29,14 @@ header {
 
 	h2{
 		margin-top: 10rem;
+		margin-left: 1rem;
 	}
 
 	.popular-anime-container {
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
+		height: 100%;
 
 		.popular-anime-card{
 			display: flex;
@@ -115,7 +117,7 @@ header {
 
 				.image-top{
 					img{
-						width: 100%;
+						width: 15rem;
 						height: 100%;
 						object-fit: cover;
 						border-radius: 10px;
